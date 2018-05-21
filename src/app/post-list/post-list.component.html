@@ -1,0 +1,7 @@
+<h2>Mon blog</h2>
+<h3>Posts : </h3>
+<app-post-list-item *ngFor="let post of posts"
+          [title]="post.title"
+          [content]="post.content"
+          [creationDate]="post.creationDate"
+          [loveIts]="post.loveIts"></app-post-list-item>
