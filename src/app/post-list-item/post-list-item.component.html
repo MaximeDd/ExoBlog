@@ -6,11 +6,8 @@
       <h4 class="col-sm-10">{{ title }}</h4>
       <span class="col-sm-2">{{ creationDate | date:'dd/MM/yyyy hh:mm'}}</span>
       <p class=" col-sm-12">{{ content}}</p>
-      <div class="col-sm-2"></div>
-      <button class="btn btn-success col-sm-3" (click)="onLike()">j'aime!</button>
-      <div class="col-sm-2"></div>
-      <button class="btn btn-danger col-sm-3" (click)="onDislike()">je n'aime pas!</button>
-      <div class="col-sm-2"></div>
+      <button class="btn btn-success col-sm-2" (click)="onLike()">j'aime!</button>
+      <button class="btn btn-danger col-sm-2" (click)="onDislike()">je n'aime pas!</button>
     </div>
   </div>
 
