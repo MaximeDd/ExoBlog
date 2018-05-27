@@ -1,4 +1,4 @@
-export class Post {
+export class PostModel {
   title: string;
   content: string;
   loveIts: number;
