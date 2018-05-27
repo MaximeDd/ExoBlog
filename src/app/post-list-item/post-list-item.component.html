@@ -1,13 +1,14 @@
 <li [ngClass]="{'list-group-item': true,
-                'list-group-item-success': loveIts > 0,
-                'list-group-item-danger': loveIts < 0}">
+                'list-group-item-success': post.loveIts > 0,
+                'list-group-item-danger': post.loveIts < 0}">
   <div class="container">
     <div class="row">
-      <h4 class="col-sm-10">{{ title }}</h4>
-      <span class="col-sm-2">{{ creationDate | date:'dd/MM/yyyy hh:mm'}}</span>
-      <p class=" col-sm-12">{{ content}}</p>
+      <h4 class="col-sm-10">{{ post.title }}</h4>
+      <span class="col-sm-2">{{ post.creationDate | date:'dd/MM/yyyy hh:mm'}}</span>
+      <p class=" col-sm-12">{{ post.content}}</p>
       <button class="btn btn-success col-sm-2" (click)="onLike()">j'aime!</button>
       <button class="btn btn-danger col-sm-2" (click)="onDislike()">je n'aime pas!</button>
+      <button class="btn btn-danger col-sm-2 pull-right" (click)="onDelete()">supprimer</button>
     </div>
   </div>
 
